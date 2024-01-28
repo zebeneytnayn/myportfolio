@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I am EKAP- My Personal Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">E.K.P.</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#work-id">Experience</a></li>
+          <li><a href="#work">Experience</a></li>
           <li><a href="#experience">Tech Stack</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -22,7 +22,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">EKP.</div>
+      <div class="logo">E.K.P.</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -31,7 +31,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#work-id" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Tech Stack</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -40,7 +40,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/images/profile.png" alt="John Doe profile picture" />
+        <img class="prof-img" src="./assets/images/profile.png" alt="My profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -58,22 +58,22 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
+          <a href="https://www.linkedin.com/in/erven-kent-patoc-2aa9b5238/" target="_blank">
+            <img
             src="./assets/images/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://linkedin.com/', '_blank')"
-          />
-          <img
+            class="icon" />
+          </a>
+          <a href="https://github.com/zebeneytnayn" target="_blank">
+            <img
             src="./assets/images/github.png"
             alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/', '_blank')"
-          />
+            class="icon" />
+          </a>
+          
         </div>
       </div>
     </section>
-
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -81,13 +81,14 @@
         <div class="section__pic-container">
           <img
             src="./assets/images/about-me.png"
-            alt="About Me Vectors"
+            alt="About Me Vector"
             class="about-pic"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
+              
               <img
                 src="./assets/images/skills.png"
                 alt="Skills icon"
@@ -110,27 +111,30 @@
           </div>
           <div class="text-container">
             <p class="text-me">
-              Hello there! I'm Erven, and I specialize in web development, where I thrive in crafting captivating websites from the ground up. With a knack for maintaining websites across various platforms and technologies, I bring flexibility and adaptability to every project. 
-           </p>
+               Hello there! I'm Erven, and I specialize in web development, where I thrive in crafting captivating websites from the ground up. With a knack for maintaining websites across various platforms and technologies, I bring flexibility and adaptability to every project. 
+            </p>
 
-           <p class="text-me">
-             I'm deeply curious and always on the lookout for new technologies to explore and integrate into my work. My hunger for growth drives me to continually learn and evolve, and I've recently delved into Amazon PPC and product research to enhance my skill set and provide even better services to my clients. 
-           </p>
+            <p class="text-me">
+              I'm deeply curious and always on the lookout for new technologies to explore and integrate into my work. My hunger for growth drives me to continually learn and evolve, and I've recently delved into Amazon PPC and product research to enhance my skill set and provide even better services to my clients. 
+            </p>
 
-           <p class="text-me">
-             While I'm passionate about exploring diverse fields, my primary focus  remains on web development, where my wealth of experience truly shines. Let's create something amazing together!
-           </p>
+            <p class="text-me">
+              While I'm passionate about exploring diverse fields, my primary focus  remains on web development, where my wealth of experience truly shines. Let's create something amazing together!
+            </p>
           </div>
         </div>
       </div>
     </section>
+    <!-- end of about me -->
 
 
+    <!-- start of my clone -->
 
+    
     <section id="work" class="work-section">
-      <div class="work-container" id="work-id">
+      <div class="work-container">
         <div class="section-title">
-          <p class="section__text__p1" >Here are my</p>
+          <p class="section__text__p1">Here are my</p>
           <h2 class="title" >Work Experience</h2>
         </div>
         <div class="separator"></div>
@@ -163,69 +167,74 @@
           </div>
         </div>
         <div class="separator"></div>
-          <div class="work-sub-section">
-            <div class="work-row">
-              <div class="work-col">
-                <h3 class="work-title">WordPress Publisher</h3>
-                <h3 class="work-company">Dms Publishing</h3>
-              </div>
-              <div class="work-col">
-                <p class="fs-17 mb-0">June 2020 - September 2022</p>
-              </div>
+        <div class="work-sub-section">
+          <div class="work-row">
+            <div class="work-col">
+              <h3 class="work-title">WordPress Publisher</h3>
+              <h3 class="work-company">Dms Publishing</h3>
             </div>
-            <div class="work-row">
-              <div class="work-col">
-                <ul class="work-description">
-                  <li class="task">Uploaded articles using Gutenberg block editor, ensuring correct spelling, grammar, and accurate product links.</li>
-                  <li class="task">Edited photos for optimization and uniformity.</li>
-                  <li class="task">Created various posts and pages (Landing, About Us, Contact Us, Terms and Conditions, etc.).</li>
-                  <li class="task">Optimized keywords for SEO with Rank Math.</li>
-                  <li class="task">Published a minimum of 10 posts daily.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="work-row">
-              <div class="work-col">
-                <button class="work-btn" type="button">View Project</button>
-              </div>
+            <div class="work-col">
+              <p class="fs-17 mb-0">June 2020 - September 2022</p>
             </div>
           </div>
-          <div class="separator"></div>
-          <div class="work-sub-section">
-            <div class="work-row">
-              <div class="work-col">
-                <h3 class="work-title">Full-Stack Developer</h3>
-                <h3 class="work-company">Freelance</h3>
-              </div>
-              <div class="work-col">
-                <p class="fs-17 mb-0">September 2019 - December 2020</p>
-              </div>
+          <div class="work-row">
+            <div class="work-col">
+              <ul class="work-description">
+                <li class="task">Uploaded articles using Gutenberg block editor, ensuring correct spelling, grammar, and accurate product links.</li>
+                <li class="task">Edited photos for optimization and uniformity.</li>
+                <li class="task">Created various posts and pages (Landing, About Us, Contact Us, Terms and Conditions, etc.).</li>
+                <li class="task">Optimized keywords for SEO with Rank Math.</li>
+                <li class="task">Published a minimum of 10 posts daily.</li>
+              </ul>
             </div>
-            <div class="work-row">
-              <div class="work-col">
-                <ul class="work-description">
-                  <li class="task">Successfully led end-to-end web application development.</li>
-                  <li class="task">Collaborated closely with clients to gather requirements and define essential functionalities.</li>
-                  <li class="task">Took charge of UI/UX design, creating an intuitive and visually appealing interface.</li>
-                  <li class="task">Designed and optimized the database structure for efficient performance.</li>
-                  <li class="task">Spearheaded the backend development, writing clean and efficient code for robust functionality.</li>
-                  <li class="task">Managed the deployment process, including selecting hosting services and configuring the server environment.</li>
-                  <li class="task">Developed using HTML, CSS, jQuery, Ajax, PHP, and MySQL, deploying on HostGator web hosting.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="work-row">
-              <div class="work-col">
-                <button class="work-btn" type="button">View Project</button>
-              </div>
+          </div>
+          <div class="work-row">
+            <div class="work-col">
+              <button class="work-btn" type="button">View Project</button>
             </div>
           </div>
         </div>
-      </div>
+        <div class="separator"></div>
+        <div class="work-sub-section">
+          <div class="work-row">
+            <div class="work-col">
+              <h3 class="work-title">Full-Stack Developer</h3>
+              <h3 class="work-company">Freelance</h3>
+            </div>
+            <div class="work-col">
+              <p class="fs-17 mb-0">September 2019 - December 2020</p>
+            </div>
+          </div>
+          <div class="work-row">
+            <div class="work-col">
+              <ul class="work-description">
+                <li class="task">Successfully led end-to-end web application development.</li>
+                <li class="task">Collaborated closely with clients to gather requirements and define essential functionalities.</li>
+                <li class="task">Took charge of UI/UX design, creating an intuitive and visually appealing interface.</li>
+                <li class="task">Designed and optimized the database structure for efficient performance.</li>
+                <li class="task">Spearheaded the backend development, writing clean and efficient code for robust functionality.</li>
+                <li class="task">Managed the deployment process, including selecting hosting services and configuring the server environment.</li>
+                <li class="task">Developed using HTML, CSS, jQuery, Ajax, PHP, and MySQL, deploying on HostGator web hosting.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="work-row">
+            <div class="work-col">
+              <button class="work-btn" type="button">View Project</button>
+            </div>
+          </div>
+        </div>
 
+      </div>
     </section>
 
 
+
+    <!-- start of work experience -->
+   
+
+
+    <!-- tech stack -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Tech Stack</h1>
@@ -318,14 +327,15 @@
                   class="icon"
                 />
                 <div>
-                  <h3>WordPress </h3>
-                  <p>(Gutenberg, Elementor, Divi)</p>
+                  <h3>WordPress (Gutenberg, Elementor, Divi)</h3>
+                  
                 </div>
               </article>
+      
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
+            <h2 class="experience-sub-title">Back Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -345,7 +355,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PHP </h3>
+                  <h3>PHP</h3>
                   
                 </div>
               </article>
@@ -357,7 +367,7 @@
                 />
                 <div>
                   <h3>Laravel</h3>
-                  
+                 
                 </div>
               </article>
               <article>
@@ -367,31 +377,30 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Git</h3>
-                  <p>(Github and Bitbucket)</p>
+                  <h3>Git(Github, Bitbucket)</h3>
+                 
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-    
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse All of My</p>
       <h1 class="title">Work Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers" id="proj-1">
+        <div class="project-containers">
           <div class="details-container color-container">
-            <div class="article-container" >
+            <div class="article-container">
               <img
-              src="./assets/images/mymeds.png"
-                alt="mymedsph-img"
+                src="./assets/images/mymeds.png"
+                alt="Project 1"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">MyMedsPH</h2>
-            <p class="project-description" id="desc-1">A Cloud-based system for healthcare providers, replacing paper records with secure electronic health records in the cloud, enabling real-time patient information access from anywhere.</p>
+            <p class="project-description">I have been involve in DentalApp and Webinars.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -409,15 +418,15 @@
           </div>
 
           <div class="details-container color-container">
-            <div class="article-container" id="proj-2">
+            <div class="article-container">
               <img
-              src="./assets/images/gardensimply.png"
-                alt="Garden Simply Image"
+                src="./assets/images/gardensimply.png"
+                alt="Project 3"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Garden Simply</h2>
-            <p class="project-description" id="desc-2">Your Ultimate Guide to Gardening Success: Reviews, Tips, and DIY Hacks for Your Green Oasis!</p>
+            <p class="project-description">I have been involve in developing this website.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -433,16 +442,17 @@
               </button>
             </div>
           </div>
+
           <div class="details-container color-container">
-            <div class="article-container" id="proj-3">
+            <div class="article-container">
               <img
-              src="./assets/images/minuteman.png"
+                src="./assets/images/minuteman.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Minute Man Pizza</h2>
-            <p class="project-description" id="desc-3">Your Pizza Perfection Partner: Tools, Recipes, and Expert Guidance for Homemade and Restaurant-Quality Pies!</p>
+            <p class="project-description">I have been involve in developing this website.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -460,15 +470,15 @@
           </div>
 
           <div class="details-container color-container">
-            <div class="article-container" id="proj-4">
+            <div class="article-container">
               <img
-              src="./assets/images/planetradio.png"
-                alt="Planet Radio City - img"
+                src="./assets/images/planetradio.png"
+                alt="Project 3"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Planet Radio City</h2>
-            <p class="project-description" id="desc-4">Explore the Sonic Universe: Expert Tips, Reviews, and Inspiration for Audio Aficionados!</p>
+            <p class="project-description">I have been involve in developing this website.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -485,15 +495,15 @@
             </div>
           </div>
           <div class="details-container color-container">
-            <div class="article-container" id="proj-5">
+            <div class="article-container">
               <img
                 src="./assets/images/lotuskitty.png"
-                alt="Lotus Kitty - img"
+                alt="Project 3"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Lotus Kitty</h2>
-            <p class="project-description" id="desc-5">Discover Your Inner Yogi and Elevate Your Practice: Explore the Finest Gear, Tips, and Inspirational Content Exclusively at Lotus Kitty!</p>
+            <p class="project-description">I have been involve in developing this website.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -509,20 +519,23 @@
               </button>
             </div>
           </div>
+
+   
+
           <div class="details-container color-container">
-            <div class="article-container" id="proj-6">
+            <div class="article-container">
               <img
                 src="./assets/images/ecedula.png"
-                alt="E-Cedula - img"
+                alt="Project 2"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">E-Cedula</h2>
-            <p class="project-description" id="desc-6">E-cedula simplifies registration and taxation processes, empowering individuals and businesses with streamlined services. Say goodbye to long queues and paperwork, and revolutionize your interaction with local government.</p>
+            <p class="project-description">An Online Registration of Cedula. Where I developed from scratch.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://iamekap.000webhostapp.com/', '_blank')"
+                onclick="location.href='https://github.com/'"
               >
                 Live Demo
               </button>
@@ -535,188 +548,93 @@
             </div>
           </div>
 
+
         </div>
       </div>
+      
     </section>
 
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Fun Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-1.png"
-              alt="Project 1"
-              class="project-img"
-            />
+    <section id="projects">
+      <p class="section__text__p1">These are my</p>
+      <h1 class="title">Personal Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-2.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/images/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+      
+    </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -752,7 +670,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#work-id">Experience</a></li>
+            <li><a href="#work">Experience</a></li>
             <li><a href="#experience">Tech Stack</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -761,6 +679,6 @@
       </nav>
       <p>Copyright &#169; 2024 ErvenKP. All Rights Reserved.</p>
     </footer>
-    <script src="assets/script/script.js"></script>
+    <script src="./assets/script/script.js"></script>
   </body>
 </html>

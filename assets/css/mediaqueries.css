@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2500px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -67,7 +67,6 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
-    gap: 0.3rem
   }
   .contact-info-container {
     margin: 0;
@@ -97,19 +96,19 @@
   }
   .title {
     font-size: 2rem;
-    margin-bottom: 2rem;
   }
-  
+  .text-container {
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 1200px) {
-
+  
   .text-container {
     /* text-align: justify; */
     text-align: center;
     padding-bottom: 20px
   }
 }
-
 @media screen and (min-width: 600px) {
   .work-row {
     display: flex;
