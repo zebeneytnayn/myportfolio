@@ -349,7 +349,14 @@ section {
   gap: 2.5rem;
   justify-content: space-around;
 }
-
+.card-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: start;
+}
 article {
   display: flex;
   width: 10rem;
@@ -536,28 +543,3 @@ footer p {
 }
 
 
-
-/* #desc-1 {
-  max-height: 0;
-  overflow: hidden;
-  
-  animation: hideDescription 0.3s ease forwards;
- 
-}
-
-#proj-1:hover #desc-1{
-  animation: showDescription 0.3s ease forwards;
- 
-}
-
-@keyframes showDescription {
-  to {
-    max-height: 100px; /* Adjust the maximum height as needed */
-  }
-}
-
-@keyframes hideDescription {
-  to {
-    max-height: 0;
-  }
-} */
