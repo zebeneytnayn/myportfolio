@@ -10,3 +10,11 @@ p {
 img{
   border-radius: 2rem;
 }
+
+.head-desc{
+  font-size: 1.25rem;
+  font-weight: 300; 
+  line-height: 1.6;
+  margin-bottom: 1rem; 
+  color: #6c757d;
+}

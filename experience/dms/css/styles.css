@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+    --clr-dark: #0f172a;
+    --clr-light: #f1f5f9;
+    --clr-accent: #e11d48;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    border: 10px solid green;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .container {
+    position: relative;
+    border: 10px solid var(--clr-dark);
+  
+  }
+  .header {
+    border: 10px solid yellow;
+  }
+  .row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid red;
+    justify-content: start;
+    gap: 1em;
+  }
+  .project-container {
+    border: 10px solid orange;
+    align-content: start;
+    
+    width: 30em;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 100%;
+    border: 10px solid blue;
+    overflow: hidden; /* Optional: hides any overflow if the image exceeds the container */
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

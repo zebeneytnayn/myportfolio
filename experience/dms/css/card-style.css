@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f1eeee;
+
+    /* border: #f50505 1px solid; */
+}
+.container {  
+    text-align: center;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    height: auto;
+    width: 100%;
+    padding-right: 15px; 
+    padding-left: 15px; 
+    padding-bottom: 7rem;
+    margin-right: auto;
+    margin-left: auto; 
+    box-sizing: border-box;
+    /* border: #dfd438 3px solid; */
+}
+h1{
+    margin-bottom: 1rem; 
+}
+.header {
+    padding-top: 1.9rem;
+    font-size: 1.5em;
+    font-weight: 700;
+    /* border: #ebbbbb 5px solid; */
+    position: relative;
+    margin-bottom: 3rem;
+}
+.head-desc {
+    font-size: 1.25rem;
+    font-weight: 300; 
+    line-height: 1.6;
+    margin-bottom: 1rem; 
+    color: #6c757d;
+    
+    
+    /* border: #020202 5px solid; */
+}
+.card-container{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* border: #62d434 5px solid; */
+}
+img {
+    max-width: 100%;
+    display: block;
+    
+}
+.ui-card {
+    width:350px;
+    background: radial-gradient(#111 50%, #000 100%);
+    overflow: hidden;
+    position: relative; 
+    border-radius: 2rem;
+    border: rgb(141, 140, 140) 1px solid;
+}
+.ui-card img {
+    
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+}
+
+.ui-card:hover img {
+    transform: scale(1.1) translateY(-15px);
+    opacity: 0.3;
+}
+
+.description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px
+}
+.description h3 {
+    font-weight: 700;
+    font-size: 32px;
+   
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
+}
+.description p {
+    margin-bottom: 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.3s;
+}
+
+.description a {
+    color: rgb(53, 53, 53);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background: rgb(255, 254, 254);
+    /* background: #34aff3; */
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 2rem;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.4s;
+}
+
+.description a:hover {
+    /* background: #0e6290; */
+    background: rgb(53, 53, 53);
+    color: #fff;
+}
+
+.ui-card:hover .description h3 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.ui-card:hover .description p {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.ui-card:hover .description a {
+    opacity: 1;
+    transform: translateY(0px);
+}
+footer{
+    text-align: center; /* Center-align text */
+    background-color: #212529; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 1.5rem 0; /* Padding on the top and bottom, shorthand notation */
+    width: 100%;
+    bottom: 0;
+}
+
+/* Apply hover styles by default on smaller screens */
+@media (max-width: 768px) {
+    .ui-card img {
+        transform: scale(1.1) translateY(-15px);
+        opacity: 0.3;
+    }
+
+    .ui-card .description h3 {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .ui-card .description p {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .ui-card .description a {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (min-width: 768px) {
+    .head-desc {
+        margin: 0 13em 3em;
+    }
+}
