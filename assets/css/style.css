@@ -264,6 +264,11 @@ section {
   gap: 1rem;
 }
 
+.btn-disabled {
+  color: #737373 !important;
+  background: rgb(163, 163, 163);
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
 /* ABOUT SECTION */
 
 #about {
